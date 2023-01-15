@@ -181,6 +181,11 @@ nav li{
     border-radius: 8px;
     padding: 50px 45px;
     text-align: center;
+    transition: transform 0.5s linear;
+}
+.some-fact-card:hover{
+    background-color: #fdebd6;
+    transform: rotate(360deg);
 }
 .some-fact-card-title{
     margin-top: 10px;
@@ -216,6 +221,63 @@ nav li{
 .our-sponsors-logo img{
     filter: grayscale(100%);
 }
+
+/* our teams section styles */
+.our-teams{
+    margin-top: 180px;
+}
+.our-teams-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+
+}
+.our-team-card{
+    padding: 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.our-team-card img{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.teams-title{
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.team-title{
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FF900E;
+}
+.team-name{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 28px;
+}
+.our-team-card ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 24px;
+}
+.our-team-card li{
+    list-style: none;
+    font-size: 25px;
+}
+.fa-brands{
+    color: #FF900E;
+
+}
+
 
 /* footer styles */
 .footer{
@@ -255,6 +317,10 @@ nav li{
         margin-top: 50px;
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .banner-section-title{
+        font-weight: 700;
+        font-size: 45px;
     }
     .banner-info {
         margin-left: 0px;
@@ -326,6 +392,20 @@ nav li{
         grid-row-gap: 30px;
         margin-top: 50px;
         justify-items: center;
+    }
+    /* our team section responsive */
+    .our-teams{
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 100%;
+    }
+    .our-teams-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        
+    
     }
 
     /* footer section responsive */
